@@ -1,9 +1,11 @@
 import React from "react"
 
 export class Footer extends React.Component {
-  render(){
+  render() {
     return (
-      <p><small>Copyright &copy; 2018</small></p>
+      <p>
+        <small>Copyright &copy; 2018</small>
+      </p>
     )
   }
 }
