@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "./assets/g-dino.png"
+// import logo from "./assets/g-dino.png"
 import "./App.css"
 import { Header } from "./Header"
 import ProfilesList from "./Main"
@@ -9,7 +9,8 @@ export default class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      profiles: []
+      profiles: [],
+      logo: "./assets/g-dino.png"
     }
   }
 
@@ -26,7 +27,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header logo={this.state.logo}/>
         <main>
           <section id="profiles-container">
             <h2>Profiles</h2>
