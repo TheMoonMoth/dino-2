@@ -20,12 +20,12 @@ export class ProfileCard extends React.Component {
       <li>
         <div className="profile-card" >
           <header className="profile-header" onClick={this.toggleClass} >
-            <img src={require(`${this.props.profile.image}`)} alt={this.props.profile.name}/>
+            <img src={this.props.profile.image} alt={this.props.profile.name}/>
             <h2>{this.props.profile.name}</h2>
           </header>
           <section className={this.state.active?'skills-container hidden' : 'skills-container'}>
             <h4>Skills</h4>
-            <ul>
+            <ul className="skills-list">
               {this.props.profile.skills.map(skill => {
                   return(
                     <li key={skill}>{skill}</li>

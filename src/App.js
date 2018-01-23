@@ -26,10 +26,12 @@ export default class App extends React.Component {
       <div className="App">
         <Header />
         <main>
-          <h2>Profiles</h2>
-          <ul id="profiles">
-            <ProfilesList profiles={this.state.profiles} />
-          </ul>
+          <section id="profiles-container">
+            <h2>Profiles</h2>
+            <ul id="profiles">
+              <ProfilesList profiles={this.state.profiles} />
+            </ul>
+          </section>
         </main>
         <Footer />
       </div>
