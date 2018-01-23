@@ -15,10 +15,12 @@ export default class App extends React.Component {
 
   componentDidMount() {
     fetch("./dinosaurs.json")
-    .then(resp => resp.json())
-    .then(resp => this.setState({
-      profiles: resp
-    }))
+      .then(resp => resp.json())
+      .then(resp =>
+        this.setState({
+          profiles: resp
+        })
+      )
   }
 
   render() {
